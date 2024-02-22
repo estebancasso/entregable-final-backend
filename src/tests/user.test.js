@@ -64,8 +64,8 @@ test("PUT -> 'URL_BASE/:id', shuld return status code 200, res.body to be define
 test("POST -> 'URL_BASE/login', shuld return status code 200, res.body to be defined, res.body.user.email == user email and res.body.token to be defined", async () => {
 
     const userLogin = {
-        email: "johancasso0@gmail.com",
-        password: "Esteban1234"
+      email: "juan@gmail.com",
+      password: "juan1234",
     }
     
     const res = await request(app)
@@ -81,8 +81,8 @@ test("POST -> 'URL_BASE/login', shuld return status code 200, res.body to be def
 test("POST -> 'URL_BASE/login', shuld return status code 401, ", async () => {
 
     const userLogin = {
-        email: "johancasso0@gmail.com",
-        password: "invalid password"
+      email: "juan@gmail.com",
+      password: "invalid password"
     }
     
     const res = await request(app)
