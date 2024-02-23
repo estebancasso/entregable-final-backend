@@ -3,7 +3,6 @@ const User = require('../models/User');
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 
-
 const getAll = catchError(async(req, res) => {
     const results = await User.findAll();
     return res.json(results);
