@@ -1,6 +1,6 @@
 const { getAll, create, getOne, remove, update, setImages } = require('../controllers/product.controllers');
 const express = require('express');
-const verifyJwt = require('../utils/verifyJWT');
+const { verifyJwt } = require('../utils/verifyJWT');
 
 const routerProduct = express.Router();
 

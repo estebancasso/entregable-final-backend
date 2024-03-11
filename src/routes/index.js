@@ -3,9 +3,9 @@ const routerUser = require('./user.router');
 const routerCategory = require('./category.router');
 const routerProduct = require('./product.router');
 const routerCart = require('./cart.router');
-const verifyJwt = require('../utils/verifyJWT');
 const routerPurchase = require('./purchase.router');
 const routerProductImg = require('./productImg.router');
+const { verifyJwt } = require('../utils/verifyJWT');
 const router = express.Router();
 
 // colocar las rutas aquí
