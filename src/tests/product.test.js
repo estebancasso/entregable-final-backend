@@ -24,7 +24,7 @@ beforeAll(async () => {
     
     TOKEN = res.body.token
 
-    //Generamos una categoria
+    //Generamos una instancia de categoria
     category = await Category.create({
       name: "Tecnologia"
     })
